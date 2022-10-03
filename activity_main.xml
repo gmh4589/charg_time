@@ -6,107 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
+    <EditText
+        android:id="@+id/enter_currency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="144dp"
-        android:text="@string/calculate"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bat_mah" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/cur_mah"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
+        android:id="@+id/enter_vollume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_field"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/bat_mah"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="50dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cur_mah"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/result_field"
-        android:layout_width="300sp"
-        android:layout_height="120sp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="30dp"
-
-        android:layout_marginEnd="60dp"
-        android:text=""
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/up_field" />
-
-    <TextView
-        android:id="@+id/up_field"
-        android:layout_width="300sp"
-        android:layout_height="30sp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="10dp"
-
-        android:text=""
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/result_field"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="9dp"
-        android:text="@string/enter_cur"
-        app:layout_constraintBottom_toTopOf="@+id/cur_mah"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/currency"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_field" />
+        app:layout_constraintTop_toBottomOf="@+id/info_panel" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="4dp"
-        android:text="@string/enter_vol"
-        app:layout_constraintBottom_toTopOf="@+id/bat_mah"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/bat_volume"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cur_mah" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_currency" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_vollume" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/end_charge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_panel"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
