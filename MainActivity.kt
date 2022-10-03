@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import java.text.SimpleDateFormat
-import java.time.LocalDate
 import java.time.LocalDateTime
 
 class MainActivity : AppCompatActivity() {
